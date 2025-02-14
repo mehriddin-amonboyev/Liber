@@ -1,8 +1,9 @@
 import './card.css';
 import cardStar from "../../assets/svg/cardStar.svg";
 import cardAudioBookIcon from "../../assets/svg/cardAudioBookIcon.svg";
-import cardAudioIcon from "../../assets/svg/cardAudioIcon.svg"
-function Card({ img, name, title, type }) {
+import cardAudioIcon from "../../assets/svg/cardAudioIcon.svg";
+
+export const Card =({ img, name, title, type }) => {
 
     const cardLeft = (type==="Audio") ? cardAudioIcon : cardAudioBookIcon; 
     return (

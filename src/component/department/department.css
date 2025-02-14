@@ -1,0 +1,27 @@
+.depart_block {
+    display: flex;
+}
+
+.depart {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 16px 7px 12px;
+    border: 1px solid #e1e1e1;
+    border-radius: 14px 0 0 14px;
+    width: 180px;
+    height: 48px;
+}
+
+.depart_title {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.search {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    border-radius: 0 14px 14px 0;
+    width: 555px;
+    height: 48px;
+}

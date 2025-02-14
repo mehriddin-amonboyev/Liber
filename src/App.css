@@ -1,0 +1,19 @@
+.new_books,
+.audio_books {
+    padding-top: 64px;
+}
+
+.new_books__title,
+.audio_books__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    color: var(--text);
+    margin-bottom: 32px;
+}
+
+.new_books__list ,
+.audio_books__list{
+    display: flex;
+    gap: 24px;
+}

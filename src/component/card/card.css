@@ -8,6 +8,11 @@
     height: 336px;
 }
 
+.card__img {
+    width: 239px;
+    height: 336px;
+}
+
 .card__name {
     margin-top: 18px;
     font-weight: 700;
