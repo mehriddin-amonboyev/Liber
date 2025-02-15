@@ -1,9 +1,7 @@
-import "./footer.css"
-
 export const Footer =()=>{
     return (
         <>
-        <div className="footer">FOOTER</div>
+        <div className="text-blue-500">FOOTER</div>
         </>
     )
 }
