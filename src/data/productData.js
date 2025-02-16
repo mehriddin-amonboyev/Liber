@@ -66,21 +66,21 @@ export const productData = [
     {
         id: 8,
         img: image5,
-        name: "Beparvolikning nozik sanati",
+        name: "Бепарволикнинг нозик санъати",
         title: "SIYOSAT, FALSAFA",
         type: ["audio"]
     },
     {
         id: 9,
         img: image8,
-        name: "Eljernonga atalgan gullar",
+        name: "SATELLITE",
         title: "SIYOSAT, FALSAFA",
         type: ["audio"]
     },
     {
         id: 10,
         img: image9,
-        name: "",
+        name: "City on the edge",
         title: "SIYOSAT, FALSAFA",
         type: ["audio"]
     }
