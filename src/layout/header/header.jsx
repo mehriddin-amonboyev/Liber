@@ -10,8 +10,6 @@ export const Header = () => {
                 <HeaderSearch />
                 <div>
                     <Button
-                        // className={"hover:text-red-400"}
-
                         startIcon={<UserIcon />}
                         variant={"birinchi"}>
                         Kirish

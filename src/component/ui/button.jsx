@@ -15,17 +15,17 @@ export const Button = ({
         <button
             type={type}
             className={clsx(
-                "py-[12px] font-bold rounded-[14px] text-[18px] cursor-pointer",
+                "font-bold  text-[18px] cursor-pointer",
                 {
-                    "bg-primary px-[24px] text-white": variant === "birinchi",
-                    "bg-secondary px-[24px] text-text-color": variant === "ikkinchi",
+                    "bg-primary rounded-[14px] px-[24px] text-white": variant === "birinchi",
+                    "bg-secondary rounded-[14px] px-[24px] text-text-color": variant === "ikkinchi",
+                    "w-[57px] h-[27px] bg-white px-[5px] py-[8px] rounded-[5px]": variant === "uchinchi",
                 },
                 className
             )}
             {...props}
         >
-
-            <span className="flex items-center gap-[12px]">
+            <span className="flex items-center">
                 <span> {startIcon} </span>
                 {children}
                 <span> {endIcon} </span>
@@ -33,4 +33,3 @@ export const Button = ({
         </button >
     )
 }
-4

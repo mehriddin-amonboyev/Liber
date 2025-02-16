@@ -6,7 +6,7 @@ import { Telegram } from "../../assets/svg/icon/telegramIcon"
 import { TikTok } from "../../assets/svg/icon/tiktokIcon"
 import { UzcardIcon } from "../../assets/svg/icon/uzcardIcon"
 import { YouTube } from "../../assets/svg/icon/youtubeIcon"
-
+import { Button } from "../../component/ui/button";
 export const Footer = () => {
     return (
         <>
@@ -78,9 +78,12 @@ export const Footer = () => {
                             </div>
                         </div>
                         <div className="mr-[382px]">
-                            <p className="text-[#3f51b5] text-sm">Биз қабул қиламиз</p>
-                            <div>
-                                <UzcardIcon />
+                            <p className="text-[#fff] font-light leading-[114%] text-sm mb-[11px]">Биз қабул қиламиз</p>
+                            <div className="flex gap-[8px]">
+                                <Button
+                                    startIcon={<UzcardIcon />}
+                                    variant={"uchinchi"}
+                                />
                             </div>
                         </div>
                     </div>
