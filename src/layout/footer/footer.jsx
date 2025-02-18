@@ -9,7 +9,7 @@ import { YouTube } from "../../assets/svg/icon/youtubeIcon"
 import { Button } from "../../component/ui/button";
 export const Footer = () => {
     return (
-        <>
+        <div className="p-0">
             <section className="flex bg-[#eef4ff]">
                 <div className="container">
                     <div className="flex justify-between pt-[31px] mb-[63px]">
@@ -89,6 +89,6 @@ export const Footer = () => {
                     </div>
                 </div>
             </section >
-        </>
+        </div>
     )
 }

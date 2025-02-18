@@ -14,11 +14,6 @@ export const Header = () => {
                         variant={"birinchi"}>
                         Kirish
                     </Button>
-                    <Button
-                        startIcon={<UserIcon />}
-                        variant={"ikkinchi"}>
-                        Kirish
-                    </Button>
                 </div>
             </div>
         </>
