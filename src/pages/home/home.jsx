@@ -33,14 +33,19 @@ export const Home = () => {
                     <h1 className='text-[32px] font-semibold'>Аудио китоблар</h1>
                     <div className='mt-[24px] flex gap-[24px]'>
                         {bookData.map((item) => !item.type.includes("pdf") ? (
-                            <BookCard
-                                key={item.id}
-                                id={item.id}
-                                img={item.img}
-                                name={item.about.name}
-                                title={item.about.janr}
-                                type={item.type}
-                            />
+                            <div key={item.id}>
+                                <Link
+                                    to={`/books/${item.id}`}>
+                                    <BookCard
+                                        key={item.id}
+                                        id={item.id}
+                                        img={item.img}
+                                        name={item.about.name}
+                                        title={item.about.janr}
+                                        type={item.type}
+                                    />
+                                </Link>
+                            </div>
                         ) : null
                         )}
                     </div>
