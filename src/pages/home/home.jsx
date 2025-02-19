@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import { ProductCard } from "../../component/card/card"
-import { productData } from "../../data/productData"
+import { BookCard } from "../../component/card/card"
+import { bookData } from "../../data/bookData"
 export const Home = () => {
     return (
         <>
@@ -8,19 +8,19 @@ export const Home = () => {
                 <div className='container'>
                     <h1 className='text-[32px] font-semibold'>Янги қўшилганлар</h1>
                     <div className='mt-[24px] flex gap-[24px]'>
-                        {productData.map((item) =>
+                        {bookData.map((item) =>
                             item.status === "new" && (
-                                <div key = {item.id}>
-                                    <Link 
-                                    to={`/books/${item.id}`}>
-                                    <ProductCard
-                                        key={item.id}
-                                        id={item.id}
-                                        img={item.img}
-                                        name={item.about.name}
-                                        title={item.about.janr}
-                                        type={item.type}
-                                    />
+                                <div key={item.id}>
+                                    <Link
+                                        to={`/books/${item.id}`}>
+                                        <BookCard
+                                            key={item.id}
+                                            id={item.id}
+                                            img={item.img}
+                                            name={item.about.name}
+                                            title={item.about.janr}
+                                            type={item.type}
+                                        />
                                     </Link>
                                 </div>
                             )
@@ -32,8 +32,8 @@ export const Home = () => {
                 <div className='container'>
                     <h1 className='text-[32px] font-semibold'>Аудио китоблар</h1>
                     <div className='mt-[24px] flex gap-[24px]'>
-                        {productData.map((item) => !item.type.includes("pdf") ? (
-                            <ProductCard
+                        {bookData.map((item) => !item.type.includes("pdf") ? (
+                            <BookCard
                                 key={item.id}
                                 id={item.id}
                                 img={item.img}

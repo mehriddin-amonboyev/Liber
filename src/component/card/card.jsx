@@ -2,7 +2,7 @@ import cardStar from "../../assets/svg/cardStar.svg";
 import cardPdfIcon from "../../assets/svg/cardPdfIcon.svg";
 import cardAudioIcon from "../../assets/svg/cardAudioIcon.svg";
 
-export const ProductCard = ({ img, name, title, type }) => {
+export const BookCard = ({ img, name, title, type }) => {
     return (
         <div className="flex flex-col justify-between">
             <div>
